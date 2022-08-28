@@ -38,10 +38,67 @@
         </tr>
         <tr>
             <td colspan="6" bgcolor="#827397" >
-                <form action="./send.html" method="post">
-                    <input type="text" name="firstName">
-                    <input type="submit" value="send">
+                <form style="font-size: 20px; color: white; text-align: left; font-weight: 900;" action="./send.html" method="post" enctype="multipart/form-data">
+                    <label for="firstName">Your First Name</label>
+                    <input type="text" name="firstName" placeholder="First Name" id="firstName">
+                    <label for="lastName">Your Last Name</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                    <label for="email">Your Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <label for="phone">Your Mobile Number</label>
+                    <input type="tel" name="phone" id="phone">
+                    <br> <br>
+                    <label for="country">Your Country</label>
+                    <select name="country" id="country">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="España">España</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Guinea Ecuatorial">Guinea Ecuatorial</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="México">México</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value=" República Dominicana"> República Dominicana</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+                    <label for="date">When Did You Buy Your Ticket?</label>
+                    <input type="date" name="date" id="date"> 
+                    <label for="image">Your Ticket</label>
+                    <input type="file" name="image" id="image">
+                    <br> <br>
+                    <p align="left">How Did You Know Us?</p>
+                    <label for="instagram">Instagram</label>
+                    <input type="checkbox" name="instagram" id="instagram"> <br>
+                    <label for="facebook">Facebook</label>
+                    <input type="checkbox" name="facebook" id="facebook"> <br>
+                    <label for="twitter">Twitter</label>
+                    <input type="checkbox" name="twitter" id="twitter"> <br>
+                    <label for="Telegram">Telegram</label>
+                    <input type="checkbox" name="Telegram" id="Telegram"> <br>
+                    <label for="Netflix">Netflix</label>
+                    <input type="checkbox" name="Netflix" id="Netflix"> <br>
+                    <label for="amazonPrime">Amazon Prime</label>
+                    <input type="checkbox" name="amazonPrime" id="amazonPrime"> <br> <br>
+                    <label for="comment">Your Message</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    <br>
+            <input style="height: 50px; width: 200px; color:white; background-color:#4D4C7D; font-size:30px; font-weight: 700;" type="submit" value="send">
                 </form>
+                <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+                <script>
+                    CKEDITOR.replace( 'comment' );
+                  </script>
             </td>            
         </tr>
 
